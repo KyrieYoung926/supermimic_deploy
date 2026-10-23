@@ -1,0 +1,36 @@
+# Local Python environment and caches
+.venv/
+.tools/
+.cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local assistant and account configuration
+/.agents/
+/.codex/
+/.aws/
+
+# User-cloned SDK and setup-managed DDS dependency
+/unitree_sdk2_python/
+/cyclonedds/
+
+# Deployment artifacts distributed separately from source
+/assets/policy.onnx
+# Processed motion dataset must stay outside source control
+/assets/motions/
+*.tar.gz
+*.tar.gz.sha256
+
+# Original screen recordings; commit the compressed GIFs in media/ instead
+/*.webm
+/*.mp4
+
+# Training data and checkpoints are not deployment inputs
+/data/
+/datasets/
+/logs/
+/checkpoints/
+*.pt
+*.pth
+*.ckpt
